@@ -38,6 +38,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // Comment 1
+// Comment 2
 
 public class GrpcServerTest {
   private static final Logger LOGGER = LoggerFactory.getLogger(GrpcServerTest.class);
