@@ -38,6 +38,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // Comment 1
+// Comment 2
+// Comment 3
+// Comment 4
 
 public class GrpcServerTest {
   private static final Logger LOGGER = LoggerFactory.getLogger(GrpcServerTest.class);
@@ -71,9 +74,6 @@ public class GrpcServerTest {
           });
     }
 
-    while (!GrpcServer.getExecuted()) { 
-      Thread.yield(); 
-    }
     Thread.sleep(120);
     double activeThreads =
         grpcMetrics.getGaugeMap().get(GRPC_SERVER_EXECUTOR_ACTIVE_THREADS_KEY).get();
